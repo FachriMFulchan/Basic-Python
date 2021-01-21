@@ -1,0 +1,39 @@
+PEDOMAN OOP
+OOP ini kita bikin 1 template/blueprint(class)
+class nya berisi banyak fungsi
+tapi penggunaannya sesuai kebutuhan
+
+INIT
+adalah metode yang otomatis akan terpanggil atau terisi 
+ketika kita membuat objek
+
+Jadi sifat sifat dan metode metode yang ada di class super tuh
+hampir sama sama yang ada di subclass
+jadi udah di inheritance aja
+biar garibet
+
+
+
+AWAS KALO INIT DI SUBCLASS
+pake super() buat manggil init atribut yang ada di superclass
+biar jadi init atribut subclass
+
+
+
+
+STATICMETHOD dan CLASSMETHOD
+staticmethod bisa digunain tanpa kita harus ngedeklarasiin sebuah objek
+jadi bagaikan method pakem lah, udah haq nya kaya gitu
+jadi walaupun GAADA OBJEK MASIH BISA DIPANGGIL
+BERARTI GAUSAH PAKE SELF
+
+class method
+dapat mengakses variable global dan static method
+tapi method dan variable yang self self gabisa diakses
+dan juga punya argumen bawaa cls
+nah cls ini gunanya buat ngambil variable dan staticmethodnya
+
+
+data = wahyu Muhammah
+a = data.split(' ')
+yang ada dalam kurung teh pembatasnya
