@@ -1,0 +1,153 @@
+OOP
+
+PROGRAMMING PARADIGMA
+Sebenernya cara ngeprogram tuh ada banyak, yang paling umum:
+1. Structural - Procedural Programming
+Jenis programming ini berurut dan serial, jadi misal franco nge attack aurora
+nah terus zilong mau nge attack diggger tuh harus nuggu si franco beres dulu
+ga efektif kan, cocok sih buat pemrograman sekuensial tapi kalo dalam game kompleks kaya gitu ga cocok
+
+PHOTOSHOP tuh cocok, cuma milih satu perintah kan ga dua,
+misal mau ngehapus ga sambil nulis kan
+
+
+2.Object-Oriented Programming
+nah misal ada beberapa objek yang sifatnya sama nah itu teh bisa diklasifikasiin jadi satu group
+misal hero ML ad franco, ada digger dan lain lain. dapat dikelompokin jadi satu template aja
+jadi gausah nulis variable banyak banyak kaya STEUCTURAL
+
+Hero(Class) ----- Template
+Digger, Franco ------- Object/Instance
+nama, health, attack, power ------- Atribut
+menyerang, defend, jurus, maju, mundur -------- Method
+
+
+
+
+
+
+
+__INIT__
+suatu fungsi bawaan dari class nya
+kalo isinya print ketika manggil si class langsung di eksekusi
+
+
+CLASS VARIABEL DAN INSTANCE VARIABEL
+Variabel yang ada di bawah class adalah kepemilikan class
+kalo yang ada di dalem init itu adalah kepunyaan objek/intansce yang dinamakan atribut
+
+
+
+
+
+METHOD
+ada dua jenis method menurut hubungannya
+1. Interaktif dengan klien---objek
+jadi klien memberi perintah ke objek harus gini gini
+
+2. Interaktif dengan objek---objek
+jadi misal sama klien objek 1 disuruh sama klien buat nyerang objek 2 nah objek2 otomatis ngebales
+terus aja objek1 sama objek 2 pa hantem hantem nah itu interaktif antar objek
+
+
+Kebebasan make fungsi pake RETURN dan ARGUMEN
+disesuaikan sesuai kebutuhan
+
+
+
+
+STATIC METHOD
+jadi manggilnya fleksibel bisa pake NAMA CLASS ataupun OBJEK
+
+
+PROPERTY
+kalo variable dalam init itu ternyata isinya variabel lain dalam init
+nah ini bakal susah du APDET NYA
+maka dari itu pake PROPERTI
+
+PROPERTI JUGA bisa buat MANGGIL GETTER DAN SETTER bawaan python
+jadi gausah pake METHOD lagi
+dan PEMANGGILANNYA LEBIH SINGKATS
+
+
+dan nanti fungsinya sama kaya VARIABEL PUBLIK
+cuma bisa di kreatifin kalo pake getter dan setter, bisa pake try and exception misal
+maintenance jadi mudah dll.
+
+
+
+CLASS INHERITANCE
+Inheritance = pewarisan
+berlaku antar class ke class
+yang satu namanya SUPER CLASS, satu lagi SUBCLASS
+
+jadi misal sebuah class tuh sebagian besar sifatnya sama
+sama kelas lain yaudah variabel dan method nya samain aja
+dengan cara PEWARISANN
+misal: Hero --- Hero Intelligence, Hero Strenght
+
+
+MULTIPLE INHERITANCE
+pewarisan nya 2x
+jadi nanti ada METHOD RESOLUTION ORDER (prioritas class mana yang akan dieksekusi)
+terus ada DIAMOND PROBLEM (ngewarisinnya jadi bentuknya diamond gitu)
+
+
+
+MAGIC METHOD
+contoh
+__init__ = bakal ngeksekusi kalo class dipanggil
+__repr__ = bakal ngeksekusi kalo objek dipanggil (for debugging)
+__str__ = sama kaya repr
+__add__ = buat nambah antar objel
+__dict__ = buat ngegantiin dict
+dll
+LIAT AJA DI DOKUMENTASI PYTHON
+
+
+
+
+
+
+
+
+
+PEDOMAN OOP
+OOP ini kita bikin 1 template/blueprint(class)
+class nya berisi banyak fungsi
+tapi penggunaannya sesuai kebutuhan
+
+INIT
+adalah metode yang otomatis akan terpanggil atau terisi 
+ketika kita membuat objek
+
+Jadi sifat sifat dan metode metode yang ada di class super tuh
+hampir sama sama yang ada di subclass
+jadi udah di inheritance aja
+biar garibet
+
+
+
+AWAS KALO INIT DI SUBCLASS
+pake super() buat manggil init atribut yang ada di superclass
+biar jadi init atribut subclass
+
+
+
+
+STATICMETHOD dan CLASSMETHOD
+staticmethod bisa digunain tanpa kita harus ngedeklarasiin sebuah objek
+jadi bagaikan method pakem lah, udah haq nya kaya gitu
+jadi walaupun GAADA OBJEK MASIH BISA DIPANGGIL
+BERARTI GAUSAH PAKE SELF
+
+class method
+dapat mengakses variable global dan static method
+tapi method dan variable yang self self gabisa diakses
+dan juga punya argumen bawaa cls
+nah cls ini gunanya buat ngambil variable dan staticmethodnya
+
+
+data = wahyu Muhammah
+a = data.split(' ')
+yang ada dalam kurung teh pembatasnya
