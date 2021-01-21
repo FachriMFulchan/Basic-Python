@@ -1,0 +1,105 @@
+PEDOMAN NUMPY
+
+biasanya SAINS KOMPUTASI tuh pake tools ini :
+-matlab
+-octave
+-scilab
+-R studio
+
+
+nah tapi pake PYTHON juga bisa tapi harus belajar PACKAGE nya duls, SEPERTI:
+-NUMPY
+-MATPLOTLIB
+-SYMPY
+-SCIPY
+
+jadi sebelum nyemplung ke AI, MACHINE LERNING
+PELAJARIN DULU BROW package package ini
+
+
+
+
+
+MEMBUAT ARRAY
+di numpy tuh kita bisa buat array apa aja si:
+- array biasa
+- array dgn range (arange)
+- array dgn linspace
+- MATRIKS (array multidimensi)
+- array dan matriks dengan nilai 0 semua
+- array dan matriks dengan nilai 1 semua
+-MATRIKS IDENTITAS
+
+
+
+
+OPERASI ARITMATIKA ARRAY
+berbeda dengan list operasi aritmatika array berprinsip ELEMENTWISE OPERATION
+per elemen gitu di operasiin nya
+
+TERKHUSUS MATRIKS KALO DIKALIIN
+tetep elementwise operation, BUKAN PERKALIAN MATRIKS
+PERKALIAN MATRIKS BEDA LAGI NANTI
+
+
+
+
+
+MANIPULASI MATRIKS
+shape = buat ngetahuin matriks nya berapa kali berapa
+transpose = baris jadi kolom, kolom jadi barus
+flatten = merubah matriks menjadi vektor baris
+reshape = merubah susunan shape matriks, YANG PENTING JUMLAH KOMPONENNYA SAMA
+resize = sama kaya reshape cuma PERMANEN
+
+
+
+
+MENGGABUNGKAN ARRAY DAN MATRIKS, KAYA LIST (STACKS)
+hstack = buat horizontal
+vstack = buat vertikal
+
+
+
+MEMBUAT ARRAY ADVANCE
+- tipe data tertentu (dtype)
+- membuat array dengan fungsi
+- membuat array dengan iterable
+- multiple array (jadi bisa int , bisa float, dll)
+
+
+SYNTAX baru
+np.random.radn = buat bikin random
+np.floor = buat ngebuletin
+
+DTYPE
+nanti kita bikin variabel
+dtipe = [('nama', 'S10'),('tinggi', 170)]
+nama dan tinggi nanti jadi ORDER
+S10 = maksimal karakter
+
+a = np.array (data, dtype = dtipe)
+print (np.sort(a, order = 'nama'))
+NAMA DAN TINGGI NANTINYA JADI ORDER
+
+
+
+MENYELESAIKAN PERSAMAAN LINER
+bisa gini
+1. np.dot(inv_A, Y)
+2. np.nplinalg.solve (A,Y)
+hasilnya sama
+
+
+
+
+NGEPLOT LINGKARAN
+pake 2phi aja
+
+jari2 = 5
+sudut = np.linspace(0, 2*np.pi, 100)
+
+x = jari2 * np.cos(sudut)
+y = jari2 * np.sin(sudut)
+plt.plot(x,y)
+plt.show()

@@ -1,0 +1,61 @@
+PEDOMAN Numpy
+
+SHAPE dan RESIZE
+shape -- selain bisa ngetahuin dimensi array
+bisa juga ngebentuk format dimensi baru bagi array
+np.shape(b) -- common ini mah
+b.shape = 1,10 -- ini baru bikin array dimensi baru
+di assign kaya getter
+
+
+np.resize(b,(1,10)) -- sementara doang ngubah b nya
+b.resize((1,10)) -- nah kalo ini mah permanen
+
+
+MACAM MACAM PEMAKAIAN RANDOM
+np.random.rand (baris,kolom) -- bikin yang random banget inimah kadang kadang harus pake np.floor
+np.random.randint(min,max,(baris,kolom)) -- integer doang
+
+
+TRUE FALSE ARRAY
+jadi array bisa diubah ke True False aja misal
+a = np.array([1,2,3,4,5])
+b = a < 3
+b = [True,True,False,False,False]
+
+
+BALIKKIN,MIRROR dan LANDSCAPE TO PORTAIT ARRAY
+bisa sih pake array, tapi lebih gampang pake jpg, jpg juga keanggap nya array loh
+
+a = np.array(((1,2,3,4,5),(6,7,8,9,10)))
+print(a[:,::-1]) -- mirror
+print([a[::-1,:]) -- balikkin atas bawah
+kalo landscape to potrait ya transpose aja
+
+
+KALO MAU NGEOPERASIIN GAMBAR BISA PAKE MATPLOTLIB sama SKIMAGE
+plt.imshow(photo diapa apain)
+plt.show()
+
+
+NP.WHERE
+kaya True sama False
+np.where(kondisi, kalo True jadi apa, kalo False jadi apa)
+
+misal : 
+a = np.array ((1,2,3,4,5))
+b = np.where (a < 3, 10, 0)
+print(b)
+[10,10,0,0,0]
+
+jadi WHERE TRUE diganti itu, WHERE FALSE diganti itu
+
+
+
+NP.NDIM(a)
+biar tau itu array teh berapa dimensioanal, 1/2/3 atau seterusnya...
+
+
+BISA LOH NGE SLICE INDEX PAKE LIST
+ADVANCE SIH TAPI WAW BANGET JADI GAMPANG
+
