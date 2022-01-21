@@ -1,2 +1,6 @@
 # Python-Basic
-This is Basic Python syntax from Youtube Channel Kelas Terbuka
+Program - program untuk pengenalan bahasa pemrograman Python
+
+Dan beberapa library nya seperti Numpy dan Matplotlib
+
+Sumber belajar dari youtube : KelasTerbuka
